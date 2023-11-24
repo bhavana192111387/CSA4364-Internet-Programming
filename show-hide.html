@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Image</title>
+    <style>
+        #myImage {
+            display: none; /* Initially hide the image */
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showimage()">Show Image</button>
+<img id="myImage" src="dog.jpeg" alt="Hidden/Visible Image">
+<button onclick="hideimage()">Hide Image</button>
+<img id="myImage" src="dog.jpeg" alt="Hidden/Visible Image">
+
+<script>
+function showimage() {
+        var img = document.getElementById('myImage');
+        if (img.style.display === 'none') {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    }
+function hideimage() {
+        var img = document.getElementById('myImage');
+        if (img.style.display === 'none') {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
